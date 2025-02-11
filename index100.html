@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafezoneHer: BRIDGING SAFETY WITH TECHNOLOGY</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Style for the header */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            height: 50px;
+            width:100px; /* Adjust as needed */
+            margin-right: 10px; /* Spacing between logo and heading */
+        }
+           header h1 {
+            margin: 0;
+        }
+
+        /* Style for the subheading (dropdown menu container) */
+        .subheading {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Style for the navigation menu */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 10px; /* Add some spacing between menu items */
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Style for the dropdown menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown menu when hovering over the More Info item */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="auth-buttons">
+    <a href="signup.html" class="auth-button">Login / SignUp</a>
+</div>
+<div class="auth1-buttons">
+<button id="emergency-btn" class="auth1-button">EMERGENCY BUTTON</button>
+</div>
+    <header>
+    <div class="log"><img src="safezoneLogo.png" alt="SafezoneHer Logo" class="logo"></img></div>
+        <h1>SafezoneHer: Bridging Safety With Technology</h1>
+    </header>
+
+    <div class="subheading">
+        <nav>
+            <ul>
+                <li><a href="#emergency-contacts">Emergency Contacts</a></li>
+                <li><a href="#self-defense">Self Defense Workshops</a></li>
+                <li><a href="#cab-safety">Cab Safety</a></li>
+                <li><a href="#gps-locations">GPS Locations</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">More Info</a>
+                    <div class="dropdown-content">
+                        <a href="#important-links">Important Links</a>
+                        <a href="#financial-legal-aids">Financial & Legal Aids</a>
+                        <a href='#mental-health-assisstance'>Mental Health Assisstance</a>
+                        <a href="#fir-legal-aids-contacts">FIR / Legal Aids Contacts</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#feedback-mechanism">Feedback Mechanism</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <section id="emergency-contacts">
+            <h2>Emergency Contacts</h2>
+            <img src="emergency-contacts.jpg" alt="Emergency Contacts">
+            <ul>
+                <li><a href="tel:112">Police: 112</a></li>
+                <li><a href="tel:108">Hospital: 108</a></li>
+                <li><a href="tel:1091">Women Helpline: 1091</a></li>
+            </ul>
+        </section>
+        
+        <section id="self-defense">
+            <h2>Self Defense Workshops</h2>
+            <img src="self-defense.jpg" alt="Self Defense Workshops">
+            <p>"Empowering women's safety, SAFEZONE offers free self-defense 
+                workshops every weekend. Our dedicated sessions equip women 
+                with essential skills and confidence to protect themselves. 
+                Join us as we prioritize your safety and well-being, 
+                ensuring a secure community for all."
+            Join us for self-defense workshops every weekend!</p>
+            <h4>You can visit <a href="selfdefence.html">Here</a> to know more about it</h4>
+        </section>
+
+        <section id="cab-safety">
+    <h2>Cab Safety Details</h2>
+    <img src="driverpic.png" alt="Cab Safety Details">
+    <p>"Ensuring safe travel is a priority. Our cab safety details include crucial information about your cab driver to enhance your safety and provide peace of mind. Each cab will have the driver’s name and mobile number, which you can access before your ride begins."
+    Stay informed and travel safely with our verified cab safety details!</p>
+    <h4>For more information, visit <a href="driverdetails (2).html">Here</a></h4>
+</section>
+
+        <section id="important-links">
+            <h2>Important Links</h2>
+            <img src="important-links.jpg" alt="Important Links">
+            <ul>
+                <li><a href="https://example.com/womens-advocacy">Women's Advocacy Group</a></li>
+                <li><a href="https://example.com/police-website">Police Website</a></li>
+                <li><a href="blog.html">Blogs & Success Stories</a></li>
+            </ul>
+        </section>
+        
+        <section id="financial-legal-aids">
+            <h2>Financial and Legal Aids</h2>
+            <img src="financial-legal-aids.jpg" alt="Financial and Legal Aids">
+            <h3><p>Financial aid can be obtained by contacting various NGOs, 
+                government agencies, or organizations that specialize in providing 
+                assistance to women in need. Eligibility criteria often include factors
+                 such as income level, employment status, and specific circumstances 
+                 of the individual or family.</p></h3>
+            <p>Contact us for financial and legal aids.</p>
+            <h4>You can visit <a href="financialaid.html">here</a> to know more</h4>
+        </section>
+
+        <section id="mental-health-assisstance">
+            <h2>Mental Health Assisstance</h2>
+            <img src="mentalhealthpic.png" alt="Mental Health Assisstance">
+            <h3><p>We understand the importance of mental well-being and are committed to providing support through our mental health assistance program. Our program includes a user-friendly form designed to help you monitor and analyze your mental health state over different dates. This tool allows you to track your progress and reflect on your mental health journey.</p></h3>
+            <p>Our goal is to offer valuable insights and resources to support your mental health. By regularly using our form, you can gain a clearer understanding of your mental well-being and take proactive steps toward improving it.</p>
+            <h4>You can access the mental health assessment form <a href="mentalhealth.html">here</a> to know more</h4>
+        </section>
+        
+        <section id="fir-legal-aids-contacts">
+            <h2>FIR / Legal Aids Contacts</h2>
+            <img src="fir-legal-aids-contacts.jpg" alt="FIR and Legal Aids Contacts">
+            <h3><p>To file an FIR (First Information Report) or seek legal aid, 
+                individuals can reach out to local police stations or legal aid 
+                organizations. Eligibility for legal aid may vary, but it generally
+                 depends on factors such as income level and the nature of the 
+                 legal issue.</p></h3>
+            <p>Contact us for filing FIRs and legal aids.</p>
+            <h3>To read more blogs you can visit on <a href="legal.html">Read more</a></h3>
+        </section>
+
+        <section id="gps-locations">
+            <h2>GPS Locations</h2>
+            <img src="gps-locations.jpg" alt="GPS Locations">
+            <p>GPS locations enabled for parents' grievances.</p>
+            <h3>To read more blogs you can visit on <a href="gps.html">Read more</a></h3>
+        </section>
+        
+        <section id="blog">
+            <h2>Blog</h2>
+            <img src="blog.jpg" alt="Blog">
+            <h3><p>The blog section provides informative content on topics related to 
+                women's safety, self-defense techniques, legal rights, and community 
+                support. It aims to empower women with knowledge and resources to navigate
+                 challenging situations and advocate for their rights. Each blog post 
+                 offers valuable insights and practical advice to help women stay safe
+                  and informed.</p></h3>
+            <div id="blog-posts"></div> 
+            <h3>To read more blogs you can visit on <a href="blog.html">Read more</a></h3>
+        </section>
+
+        <section id="feedback-mechanism">
+            <h2>Feedback Mechanism</h2>
+            <img src="feedback-mechanism.jpg" alt="Feedback Mechanism">
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SAFEZONE</p>
+    </footer>
+    <script src="emergency.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

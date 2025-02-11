@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary meta tags and link to CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Existing content -->
+
+    <section id="mental-health-monitoring">
+        <h2>Mental Health Monitoring</h2>
+        <form id="mental-health-form">
+            <!-- General Emotional State -->
+            <fieldset>
+                <legend>General Emotional State:</legend>
+                <label for="feeling">How are you feeling today?</label><br>
+                <select id="feeling" name="feeling" required>
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                </select><br><br>
+                <label for="down">Have you been feeling down or hopeless lately?</label><br>
+                <select id="down" name="down" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="enjoy">Do you find it difficult to enjoy the things you used to?</label><br>
+                <select id="enjoy" name="enjoy" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="mood-changes">Have you noticed any changes in your mood recently?</label><br>
+                <select id="mood-changes" name="mood-changes" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="mood-rating">How would you rate your mood on a scale of 1 to 10 today?</label><br>
+                <input type="number" id="mood-rating" name="mood-rating" min="1" max="10" required><br><br>
+            </fieldset>
+
+            <!-- Anxiety Assessment -->
+            <fieldset>
+                <legend>Anxiety Assessment:</legend>
+                <label for="nervous">Do you often feel nervous, anxious, or on edge?</label><br>
+                <select id="nervous" name="nervous" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="worry-frequency">How frequently do you worry about different aspects of your life?</label><br>
+                <select id="worry-frequency" name="worry-frequency" required>
+                    <option value="frequently">Frequently</option>
+                    <option value="occasionally">Occasionally</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select><br><br>
+                <label for="trouble-relaxing">Have you had trouble relaxing or sleeping because of worry?</label><br>
+                <select id="trouble-relaxing" name="trouble-relaxing" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="physical-symptoms">Do you experience physical symptoms like a racing heart or shortness of breath when you're anxious?</label><br>
+                <select id="physical-symptoms" name="physical-symptoms" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="anxiety-rating">On a scale of 1 to 10, how would you rate your anxiety levels today?</label><br>
+                <input type="number" id="anxiety-rating" name="anxiety-rating" min="1" max="10" required><br><br>
+            </fieldset>
+
+            <!-- Depression Assessment -->
+            <fieldset>
+                <legend>Depression Assessment:</legend>
+                <label for="interest">Have you lost interest in activities that you once enjoyed?</label><br>
+                <select id="interest" name="interest" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="energy">Do you find yourself feeling tired or lacking energy often?</label><br>
+                <select id="energy" name="energy" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="sleep-trouble">Have you been having trouble sleeping or sleeping too much?</label><br>
+                <select id="sleep-trouble" name="sleep-trouble" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="self-harm">Have you had thoughts of harming yourself or that you’d be better off not being here?</label><br>
+                <select id="self-harm" name="self-harm" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="loneliness">How often do you feel lonely or isolated?</label><br>
+                <select id="loneliness" name="loneliness" required>
+                    <option value="often">Often</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Stress Levels -->
+            <fieldset>
+                <legend>Stress Levels:</legend>
+                <label for="current-stress">How stressed do you feel right now on a scale of 1 to 10?</label><br>
+                <input type="number" id="current-stress" name="current-stress" min="1" max="10" required><br><br>
+                <label for="daily-tasks">Are you finding it difficult to manage your daily tasks due to stress?</label><br>
+                <select id="daily-tasks" name="daily-tasks" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="overwhelmed">Do you feel overwhelmed by your responsibilities?</label><br>
+                <select id="overwhelmed" name="overwhelmed" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="physical-stress">Have you been experiencing headaches, muscle tension, or stomach issues due to stress?</label><br>
+                <select id="physical-stress" name="physical-stress" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="support-system">Do you have a support system you can turn to when you’re feeling stressed?</label><br>
+                <select id="support-system" name="support-system" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>Your Mood Trends</h3>
+        <canvas id="moodChart"></canvas>
+    </section>
+
+    <!-- Include your JavaScript -->
+    <script src="script2.js"></script>
+</body>
+</html>

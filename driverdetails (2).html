@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver and Vehicle Details</title>
+    <link rel="stylesheet" href="driver.css">
+</head>
+<body>
+    <h1>Driver and Vehicle Details Form</h1>
+    
+    <form id="driver-form">
+        <label for="driver-name">Driver's Name:</label><br>
+        <input type="text" id="driver-name" name="driver-name" required><br><br>
+        
+        <label for="driver-phone">Driver's Phone Number:</label><br>
+        <input type="tel" id="driver-phone" name="driver-phone" required><br><br>
+        
+        <label for="car-model">Car Model:</label><br>
+        <input type="text" id="car-model" name="car-model" required><br><br>
+        
+        <label for="vehicle-no">Vehicle Number:</label><br>
+        <input type="text" id="vehicle-no" name="vehicle-no" required><br><br>
+        
+        <button type="button" onclick="saveDetails()">Save Details</button>
+    </form>
+    
+    <div id="details-info">
+        <!-- Driver and vehicle details will be displayed here -->
+    </div>
+    
+    <script>
+        function saveDetails() {
+            // Get the input values
+            const name = document.getElementById('driver-name').value;
+            const phone = document.getElementById('driver-phone').value;
+            const carModel = document.getElementById('car-model').value;
+            const vehicleNo = document.getElementById('vehicle-no').value;
+            
+            // Create a new div element to display the details
+            const detailsDiv = document.createElement('div');
+            detailsDiv.innerHTML = `
+                <p><strong>Driver's Name:</strong> ${name}</p>
+                <p><strong>Driver's Phone Number:</strong> ${phone}</p>
+                <p><strong>Car Model:</strong> ${carModel}</p>
+                <p><strong>Vehicle Number:</strong> ${vehicleNo}</p>
+                <button onclick="removeDetails(this)">Remove Details</button>
+            `;
+            
+            // Append the new div to the details-info section
+            document.getElementById('details-info').appendChild(detailsDiv);
+            
+            // Clear the form inputs
+            document.getElementById('driver-name').value = '';
+            document.getElementById('driver-phone').value = '';
+            document.getElementById('car-model').value = '';
+            document.getElementById('vehicle-no').value = '';
+        }
+        
+        function removeDetails(button) {
+            // Remove the details div that contains the clicked button
+            const detailsDiv = button.parentNode;
+            detailsDiv.remove();
+        }
+    </script>
+</body>
+</html>

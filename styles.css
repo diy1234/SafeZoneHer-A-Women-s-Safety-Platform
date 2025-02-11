@@ -1,0 +1,216 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: rgba(0, 77, 153, 0.8); /* Slightly transparent blue background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #004d99;
+    font-size: 1.8rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 60%; /* Adjust width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center images */
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#feedback-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#feedback-form input, #feedback-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#feedback-form button {
+    background: #004d99;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#feedback-form button:hover {
+    background: #003d80;
+}
+
+footer {
+    background: rgba(0, 77, 153, 0.8); /* Slightly transparent blue background */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 90%; /* Larger percentage for smaller screens */
+    }
+}
+.log{
+    top: 10px;         /* Distance from the top of the viewport */
+    left: 5px;       /* Distance from the right edge of the viewport */
+    display: flex;
+    gap: 10px; 
+    z-index: 1000;  
+}
+.auth-buttons {
+    position: fixed;
+    top: 10px;         /* Distance from the top of the viewport */
+    right: 10px;       /* Distance from the right edge of the viewport */
+    display: flex;
+    gap: 10px;         /* Space between buttons */
+    z-index: 1000;     /* Ensure buttons are on top */
+}
+
+/* Style for the authentication buttons */
+.auth-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px; /* Oval shape */
+    background-color: #6495d6; /* Green background */
+    color: white;        /* White text */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.auth-button:hover {
+    background-color: #15417b; /* Darker green on hover */
+}
+
+.auth1-buttons {
+    position: fixed;
+    top: 10px;         /* Distance from the top of the viewport */
+    left: 10px;       /* Distance from the right edge of the viewport */
+    display: flex;
+    gap: 10px;         /* Space between buttons */
+    z-index: 1000;     /* Ensure buttons are on top */
+}
+
+/* Style for the authentication buttons */
+.auth1-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px; /* Oval shape */
+    background-color: #b91f1f; /* Red background */
+    color: white;        /* White text */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.auth1-button:hover {
+    background-color: #15417b; /* Darker green on hover */
+}
